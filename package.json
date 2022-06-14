@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://B-Stewart.github.io/front-end-skill-checks",
   "dependencies": {
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
@@ -21,9 +22,12 @@
     "web-vitals": "2.1.4"
   },
   "devDependencies": {
-    "prettier": "2.6.2"
+    "prettier": "2.6.2",
+    "gh-pages": "4.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d build",
     "start": "react-scripts start",
     "dev": "npm run start",
     "build": "react-scripts build",
