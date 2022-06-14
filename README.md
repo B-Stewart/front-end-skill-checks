@@ -1,4 +1,4 @@
-# Front-End Skill Checks
+# [Front-End Skill Checks](https://front-end-skill-checks.onrender.com)
 
 ## General Guidelines
 
@@ -8,7 +8,7 @@ Ideally you should be able to just look at these urls and not have to use the so
 
 ## Projects
 
-### [1. Counter](https://b-stewart.github.io/front-end-skill-checks/projects/counter)
+### [1. Counter](https://front-end-skill-checks.onrender.com/projects/counter)
 
 #### Instructions
 
@@ -18,7 +18,7 @@ Create a counter that can increment and decrement.
 
 Persist the data across reloads so that when you refresh the page it loads the previous counted value.
 
-### [2. Thermometer](https://b-stewart.github.io/front-end-skill-checks/projects/thermometer)
+### [2. Thermometer](https://front-end-skill-checks.onrender.com/projects/thermometer)
 
 #### Instructions
 
