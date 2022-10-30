@@ -35,8 +35,6 @@ const LoadingIcon = () => (
   </Box>
 );
 
-// https://weatherdbi.herokuapp.com/documentation/v1
-
 export const ThermometerProject = () => {
   const [activeCity, setActiveCity] = useState(cities[0]);
   const [cityData, setCityData] = useState<any>(null);
@@ -44,15 +42,12 @@ export const ThermometerProject = () => {
 
   const fetchWeather = async (city: string) => {
     setLoading(true);
-    const res = await fetch(
-      `https://weatherdbi.herokuapp.com/data/weather/${encodeURIComponent(
-        city.toLowerCase(),
-      )}`,
-    );
+    // Mocked api, could use a real one
+    const res = await fetch(`/data.json`);
 
     const data = await res.json();
 
-    setCityData(data);
+    setCityData(data[city]);
     setLoading(false);
   };
 
@@ -60,13 +55,11 @@ export const ThermometerProject = () => {
     fetchWeather(activeCity);
   }, [activeCity]);
 
-  console.log(cityData);
-
   if (!cityData) {
     return <LoadingIcon />;
   }
 
-  const temp = cityData.currentConditions.temp.f;
+  const temp = cityData.temp.f;
   const tempMath = (temp / 136) * 100;
   const tempPercent = tempMath <= 0 ? 0 : tempMath;
 
@@ -94,8 +87,7 @@ export const ThermometerProject = () => {
       </div>
 
       <div className="textCenter">
-        {activeCity}{" "}
-        <b>{loading ? "--" : cityData.currentConditions.temp.f}°F</b>
+        {activeCity} <b>{loading ? "--" : cityData.temp.f}°F</b>
       </div>
       <div className={styles.thermometer}>
         {loading ? null : (

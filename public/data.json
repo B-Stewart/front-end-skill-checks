@@ -1,0 +1,72 @@
+{
+  "London": {
+    "temp": {
+      "f": 62
+    }
+  },
+  "Los Angeles": {
+    "temp": {
+      "f": 95
+    }
+  },
+  "Ottawa": {
+    "temp": {
+      "f": 49
+    }
+  },
+  "Berlin": {
+    "temp": {
+      "f": 58
+    }
+  },
+  "Delhi": {
+    "temp": {
+      "f": 66
+    }
+  },
+  "Tokyo": {
+    "temp": {
+      "f": 61
+    }
+  },
+  "Istanbul": {
+    "temp": {
+      "f": 55
+    }
+  },
+  "New York": {
+    "temp": {
+      "f": 56
+    }
+  },
+  "Mexico City": {
+    "temp": {
+      "f": 72
+    }
+  },
+  "Shanghai": {
+    "temp": {
+      "f": 65
+    }
+  },
+  "Beijing": {
+    "temp": {
+      "f": 52
+    }
+  },
+  "Buenos Aires": {
+    "temp": {
+      "f": 71
+    }
+  },
+  "Geneva": {
+    "temp": {
+      "f": 31
+    }
+  },
+  "Kathmandu": {
+    "temp": {
+      "f": 40
+    }
+  }
+}
