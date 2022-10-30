@@ -24,8 +24,20 @@ Persist the data across reloads so that when you refresh the page it loads the p
 
 Create a weather thermometer app that can show the data of city's weather conditions.
 
-This is meant to be an API interaction, you can use [WeatherDBI](https://weatherdbi.herokuapp.com/documentation/v1) or another alternative if you'd like.
+This is meant to be an API interaction, you can use the local API like this repo, or another weather alternative if you'd like.
 
 #### Extra Credit
 
 Cache / Memoize the data returned from the API such that when you load "London" for example, then click to another city, when you return to "London" it doesn't refetch the API, but uses the previous value.
+
+### [3. Card UI](https://front-end-skill-checks.onrender.com/projects/card-ui)
+
+#### Instructions
+
+Create a repeating layout of images and text that have a "card" style look.
+
+This should be a responsive design so that it looks good no matter what size screen you have.
+
+#### Extra Credit
+
+Handle the case where if the image takes too long to load there is a "jump" of the layout once the image loads. This can be mocked by adding network delay in chrome dev tools. Suggestion would be to add a skeleton layout or loading animation.
